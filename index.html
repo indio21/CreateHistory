@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/img/logob.ico">
+    <link rel="stylesheet" href="style.css">
+    <title>Creador de Historia</title>
+    <script src="https://kit.fontawesome.com/79756456c5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <main>
+        
+        <form class="form estilo_form" action="" method="post">
+            <h1 id="titulo">Crear historia</h1>
+            <label for="file">Imagen de fondo: </label>
+
+            <input type="file" id="file" name="file" placeholder="Seleccionar archivo"/>
+            
+            <label for="fechafinal">Fecha del viaje:</label>
+            <input type="text" id="fechafinal" name="fechafinal" >
+
+            <label for="lugarfinal">Lugar de destino:</label>
+            <input type="text" id="lugarfinal" name="lugarfinal" >
+
+
+            <label for="campo_1">Aereos:</label>
+            <input type="text" id="campo_1" name="campo_1" >
+            
+            <label for="campo_2">Traslado:</label>
+            <input type="text" id="campo_2" name="campo_2">
+
+            <label for="campo_3">Cantidad de días:</label>
+            <input type="text" id="campo_3" name="campo_3">
+
+            <label for="preciofinal">Precio:</label>
+            <input type="text" id="preciofinal" name="preciofinal">
+            
+            <div id="botones">
+                <p>Color íconos:</p>
+                <button  type="button" id="btn-blanco" onclick="cambiarColor(0)">Blanco</button>
+                <button  type="button" id="btn-oscuro" onclick="cambiarColor(1)">Oscuro</button>
+            </div>
+            
+
+
+            <button type="submit" id="btn-crear">Crear historia</button>
+        </form>
+      
+        
+
+                <div class="promotions-list">
+                    <div class="promotions-list-cards">
+                        <!-- class="promotions-card promo-playa" -->
+                        <div id="art" class="promotions-card promo-cuba"> 
+                            <h2 id="fecha">11 de Agosto</h2>
+                            <h3 id="lugar">Playa del Carmen</h3>
+                            <p class="incluye">INCLUYE</p>
+                            <img src="./assets/img/avion.png" class="ico-promo" id="ico_avion"> 
+                            <p id="texto_1">Aereos</p>
+                            <img src="./assets/img/auto.png" class="ico-promo" id="ico_auto">
+                            <p id="texto_2">Traslado</p>
+                            <img src="./assets/img/alojamiento-1.png" class="ico-promo" id="ico_lugar">
+                            <p id="texto_3">7 noches all inclusive</p>
+                            <p class="tarifa">Tarifa final p/persona</p>
+                            <h2 id="precio" class="precio">$273.000</h2>
+                            <!-- <h2 class="compra"><a href="#"></a>Lo quiero!</a></h2> -->
+                        </div>
+                       
+                    </div>
+                </div>
+        </section>
+       
+
+    </main>
+    <footer>
+        <div class="logo-footer">
+
+        </div>
+    </footer>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
